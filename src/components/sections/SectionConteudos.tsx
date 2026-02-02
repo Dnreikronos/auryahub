@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 export function SectionConteudos() {
   return (
     <section
@@ -5,7 +7,8 @@ export function SectionConteudos() {
       className="bg-surface px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="conteudos-heading"
     >
-      <div className="mx-auto max-w-4xl">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-4xl">
         <h2
           id="conteudos-heading"
           className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl"
@@ -16,7 +19,8 @@ export function SectionConteudos() {
           Insights e conteúdos sobre estratégia, posicionamento e crescimento
           de negócios em breve. Acompanhe nossas redes para novidades.
         </p>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 export function SectionOQueFazemos() {
   return (
     <section
@@ -5,7 +7,8 @@ export function SectionOQueFazemos() {
       className="bg-surface-alt px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="o-que-fazemos-heading"
     >
-      <div className="mx-auto max-w-4xl">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-4xl">
         <h2
           id="o-que-fazemos-heading"
           className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl"
@@ -23,7 +26,8 @@ export function SectionOQueFazemos() {
             execução para garantir que a estratégia funcione na prática.
           </p>
         </div>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

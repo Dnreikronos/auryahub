@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 const PILLARS = [
   {
     title: "DIAGNÓSTICO",
@@ -23,7 +25,8 @@ export function SectionNossoMetodo() {
       className="bg-surface px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="nosso-metodo-heading"
     >
-      <div className="mx-auto max-w-7xl">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-7xl">
         <h2
           id="nosso-metodo-heading"
           className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl"
@@ -43,7 +46,8 @@ export function SectionNossoMetodo() {
             </article>
           ))}
         </div>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 const BENEFITS = [
   {
     title: "Estratégia antes da execução",
@@ -26,7 +28,8 @@ export function SectionPorQueAuryaHub() {
       className="bg-surface px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="por-que-heading"
     >
-      <div className="mx-auto max-w-7xl">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-7xl">
         <h2
           id="por-que-heading"
           className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl"
@@ -52,7 +55,8 @@ export function SectionPorQueAuryaHub() {
             </article>
           ))}
         </div>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 const BULLETS = [
   "Sentem que estão fazendo muito e avançando pouco",
   "Querem crescer, mas não sabem exatamente por onde começar",
@@ -12,7 +14,8 @@ export function SectionParaQuemE() {
       className="bg-surface-alt px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="para-quem-e-heading"
     >
-      <div className="mx-auto max-w-4xl">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-4xl">
         <h2
           id="para-quem-e-heading"
           className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl"
@@ -37,7 +40,8 @@ export function SectionParaQuemE() {
           Atendemos prestadores de serviço e empresas que desejam crescer com
           inteligência e segurança.
         </p>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

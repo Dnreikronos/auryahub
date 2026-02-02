@@ -1,3 +1,5 @@
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
+
 const WHATSAPP_URL = "https://wa.link/egrcws";
 
 export function SectionCTA() {
@@ -7,7 +9,8 @@ export function SectionCTA() {
       className="bg-primary px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8 lg:py-28"
       aria-labelledby="cta-heading"
     >
-      <div className="mx-auto max-w-3xl text-center">
+      <AnimateOnScroll>
+        <div className="mx-auto max-w-3xl text-center">
         <h2
           id="cta-heading"
           className="font-heading text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
@@ -27,7 +30,8 @@ export function SectionCTA() {
         >
           👉 Fale com a Aurya Hub
         </a>
-      </div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }
