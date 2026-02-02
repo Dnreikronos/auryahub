@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-arial: Arial, Helvetica, sans-serif;
+  /* Logo-derived palette: deep blue (primary), maroon (secondary), purple (accent), light grey (surface) */
+  --color-primary: #1d1c5c;
+  --color-primary-dark: #15144a;
+  --color-secondary: #6b0e3d;
+  --color-accent: #5e1a7d;
+  --color-surface: #f5f5f5;
+  --color-surface-alt: #eeeeee;
+  --color-text-primary: #1a1a2e;
+  --color-text-muted: #475569;
+  --color-white: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply font-body text-text-primary antialiased;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+  }
+}
