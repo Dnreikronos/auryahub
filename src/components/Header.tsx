@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <header
-      className="sticky top-0 z-50 w-full border-b border-white/10 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80"
+      className="sticky top-0 z-50 w-full border-b border-primary/15 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80"
       role="banner"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -94,7 +94,7 @@ export function Header() {
         role="dialog"
         aria-label="Menu mobile"
       >
-        <div className="border-t border-white/10 bg-surface px-4 py-4">
+        <div className="border-t border-primary/15 bg-surface px-4 py-4">
           <nav className="flex flex-col gap-2" aria-label="Navegação mobile">
             {NAV_LINKS.map(({ label, href }) => (
               <Link

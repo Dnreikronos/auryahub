@@ -37,7 +37,7 @@ export function SectionNossoMetodo() {
           {PILLARS.map(({ title, description }, index) => (
             <article
               key={title}
-              className="group rounded-xl border border-white/20 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2"
+              className="group rounded-xl border border-primary/15 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2"
             >
               <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-primary">
                 {title}

@@ -22,10 +22,7 @@ export function SectionParaQuemE() {
         >
           PARA QUEM É
         </h2>
-        <p className="mt-6 font-heading text-xl font-semibold text-primary sm:text-2xl">
-          Para quem é a Aurya Hub?
-        </p>
-        <p className="mt-4 text-base text-text-primary sm:text-lg">
+        <p className="mt-6 text-base text-text-primary sm:text-lg">
           Para negócios que:
         </p>
         <ul className="mt-6 space-y-3 text-base text-text-primary sm:text-lg" role="list">
