@@ -13,6 +13,11 @@ const cinzel = Cinzel({
 
 export const metadata: Metadata = {
   title: "Aurya Hub | Estratégia de negócio para quem quer crescer com direção",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   description:
     "A Aurya Hub ajuda negócios a tomarem decisões certas antes de executar, unindo visão estratégica, posicionamento e organização para gerar resultados reais.",
   keywords: [
